@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 5</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#63907D]">
+
+    <div class="columns-1 sm:columns-2 space-x-3 pt-5 pl-0 sm:pl-5 h-screen max-[426px]:mx-auto">
+        <div class="pl-3">
+            <div class="font-text text-neutral-100 max-[426px]:text-center">
+                <p class="text-8xl">LEVEL 5</p>
+                <p id="lvl5desc" class="text-lg sm:text-3xl">ODD OR EVEN!</p>
+            </div>
+
+            <div id="level5term" class="bg-[#212121] w-11/12 sm:w-4/5 h-[220px] sm:h-[600px] rounded-md mt-5 mx-auto sm:hidden text-left text-neutral-100">
+                <p class="pl-4 pt-2 text-3xl font-text text-neutral-100">></p>
+            </div>
+
+            <div class="font-text mt-12 sm:mt-52 w-72 mx-auto sm:mx-0">
+                <label class="text-neutral-100 text-3xl max-[426px]:hidden" for="level5">ENTER A NUMBER:</label>
+                <input class="rounded-md w-72 sm:w-96 h-10 sm:h-12 pl-3 text-xl" type="number" name="number" id="level5" placeholder="NUMBER..." required>
+            </div>
+
+            <div class="font-text text-[#D9CAB3] mt-6 sm:mt-16 mb-2 sm:mb-52  max-[426px]:text-center">
+                <button id="level5btn" type="submit" class="px-12 py-5 text-base font-medium text-center bg-[#212121] rounded-lg" onclick="submitFive()">SUBMIT</button>
+            </div>
+        </div>
+        <div>
+            <div class="flex bg-[#D9CAB3] space-x-10 sm:space-x-48 justify-center w-2/3 sm:w-4/5 rounded-2xl mt-52 sm:mt-96 max-[426px]:mx-auto">
+                <a href="./level4.html">
+                    <img src="../assets/ArrowCircleLeft.png" alt="Arrow Left">
+                </a>
+                <a href="../index.html">
+                    <img src="../assets/House.png" alt="House Icon">
+                </a>
+                <a href="./level6.html">
+                    <img src="../assets/ArrowCircleRight.png" alt="Arrow Right">
+                </a>
+            </div>
+            <div class="bg-[#212121] w-4/5 h-[800px] rounded-xl mt-3 max-[426px]:hidden">
+                <p id="level5term2" class="pl-4 pt-2 text-3xl font-text text-neutral-100" >></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/levels.js"></script>
+</body>
+</html>
